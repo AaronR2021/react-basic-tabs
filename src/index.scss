@@ -1,0 +1,131 @@
+body{
+    max-width:1024px;
+    width:100%;
+    background-color: whitesmoke;
+}
+
+.body-grid{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    @media only screen and (max-width: 600px) {
+  & {
+        grid-template-columns: 1fr;
+
+  }
+}
+}
+*{
+    box-sizing:border-box;
+}
+.nav{
+    margin:0px;
+    padding:0px;
+    @media only screen and (max-width: 600px) {
+  & {
+        display:flex;
+
+        flex-direction: row;
+        justify-content: space-evenly;
+
+  }
+}
+}
+li{
+    list-style-type: none;
+    margin: 20px 0px;
+
+}
+.company-name{
+    color:black;
+    width:150px;
+    list-style-type: none;
+    margin-bottom:20px;
+
+    display:flex;
+    justify-content: flex-end;
+    padding:10px 0px;
+    font-size: 23px;
+            @media only screen and (max-width: 600px) {
+  & {
+            padding:0px;
+            margin:0px;
+            width: fit-content;
+
+  }}
+
+}
+.active{
+    border-left: 3px solid green;
+    color:rgb(43,148,145);
+        @media only screen and (max-width: 600px) {
+  & {
+            border-left: none;
+  }}
+    }
+
+.company-name:nth-child(2n){
+    font-size: 23px;
+}
+.header{
+    margin-bottom: 100px;
+    h1{
+text-align: center;
+    }
+}
+.content-experience{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    height: 700px;
+    margin: 10px;
+    ul{
+                @media only screen and (max-width: 600px) {
+  & {
+           padding: 0;             
+  }}
+    }
+    .company-tag{
+        background-color: gainsboro;
+        width: fit-content;
+        height: fit-content;
+        border-radius: 6px;
+        margin: 0px;
+        margin-bottom:10px;
+        padding: 5px 10px;
+        color:rgb(87, 87, 87);
+        font-weight: bold;
+    }
+    .duration{
+        color:rgb(87, 87, 87);
+        font-weight: 700;
+        letter-spacing: 1.2px;
+    }
+    .icon{
+        margin-right:20px;
+        margin-top:10px;
+
+        color:rgb(68,171,164);
+
+        font-size: 30px;
+
+        width: 30px;
+        height: 30px;
+    }
+    li{
+        display:flex;
+        flex-direction:row;
+        justify-content: baseline;
+    }
+    p{
+        margin: 0;
+    }
+    button{
+        border: none;
+        margin: 0 auto;
+        padding:10px 20px;
+        background-color:rgb(68,171,164);
+        color:white ;
+        border-radius:6px;
+        cursor: pointer;
+    }
+}
